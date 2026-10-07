@@ -28,8 +28,6 @@ CNB adalah adaptasi dari MNB yang secara spesifik dirancang untuk menangani **da
 - **Konsep:** Alih-alih menghitung probabilitas kata di dalam sebuah kelas, CNB menghitung probabilitas kata di dalam **komplemen kelas** (yaitu, semua kelas *kecuali* kelas target).
 - **Cara Kerja:** Untuk memprediksi kelas "Negatif", CNB akan melihat seberapa sering kata tersebut muncul di kelas "Positif" dan "Netral". Jika sebuah kata jarang muncul di komplemen kelas Negatif, maka kata tersebut memiliki bobot tinggi untuk mengindikasikan kelas Negatif.
 
----
-
 ## Ablation Study
 
 Untuk menemukan representasi fitur terbaik, dilakukan studi ablasi dengan memvariasikan konfigurasi TF-IDF dan model
@@ -43,3 +41,9 @@ Berdasarkan eksperimen dan evaluasi yang telah dilakukan, dapat ditarik beberapa
 3. **Interpretabilitas dengan LIME:** Implementasi LIME berhasil memvalidasi bahwa model tidak "menghafal" data, tetapi benar-benar mempelajari pola linguistik. LIME mampu menyoroti kata kunci (seperti *"moji"*, *"ngk"*, *"ang"*) yang secara logis berkontribusi terhadap keputusan klasifikasi, menjadikan model ini transparan dan dapat dipercaya untuk penelitian lebih lanjut.
 
 ---
+
+## Lisensi
+
+Project ini dapat digunakan untuk keperluan edukasi saja.
+
+Copyright (c) 2026 wansobriamin
